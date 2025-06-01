@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MediBridge</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container fade-in">
+    <h1 class="project-title">MediBridge</h1>
+
+    <!-- LOGIN -->
+    <section id="login-section">
+      <h2>Login</h2>
+      <input type="email" id="login-email" placeholder="Email" />
+      <input type="password" id="login-password" placeholder="Password" />
+      <button id="login-btn">Login</button>
+      <p>Don't have an account? <a href="#" id="show-signup">Sign Up</a></p>
+    </section>
+
+    <!-- SIGNUP -->
+    <section id="signup-section" class="hidden">
+      <h2>Sign Up</h2>
+      <input type="text" id="signup-name" placeholder="Full Name" />
+      <input type="email" id="signup-email" placeholder="Email" />
+      <input type="tel" id="signup-phone" placeholder="Phone Number" />
+      <input type="password" id="signup-password" placeholder="Password" />
+      <button id="signup-btn">Sign Up</button>
+      <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+    </section>
+
+    <!-- BOOKING -->
+    <section id="booking-section" class="hidden">
+      <h2>Book Appointment</h2>
+
+      <label for="hospital-select">Select Hospital:</label>
+      <select id="hospital-select"></select>
+
+      <label for="doctor-select">Select Doctor:</label>
+      <select id="doctor-select"></select>
+
+      <label for="date-input">Select Date:</label>
+      <input type="date" id="date-input" />
+
+      <label for="time-slot">Time Slot:</label>
+      <select id="time-slot"></select>
+
+      <button id="book-btn">Book Appointment</button>
+      <p id="confirmation-message"></p>
+      <button id="logout-btn" class="logout-btn">Logout</button>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
